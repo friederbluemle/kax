@@ -1,3 +1,6 @@
+/* eslint @typescript-eslint/no-var-requires: "off" */
+/* eslint-env node */
+
 const kax = require('../dist/index').default
 
 const delay = ms =>
@@ -29,4 +32,4 @@ const main = async () => {
   task.succeed('Done !')
 }
 
-main().then(() => {})
+main()
